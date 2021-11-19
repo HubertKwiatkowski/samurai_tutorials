@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Najeżdżanie na header, nav przypięty</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --navHeight: 10vh;
+      --headerHeight: 90vh;
+    }
+
+    html {
+      text-align: center;
+      color: red;
+      text-transform: uppercase;
+      font-family: arial;
+    }
+
+    nav {
+      position: fixed;
+      height: var(--navHeight);
+      width: 100vw;
+      background-color:black;
+      color: white;
+      line-height: 10vh;
+      font-size: 36px;
+      top: 0;
+      left: 0;
+      /* z-index: 1; */
+    }
+
+    header {
+      position: fixed;
+      height: var(--headerHeight);
+      width: 100vw;
+      background-color:brown;
+      color: white;
+      line-height: 90vh;
+      font-size: 36px;
+      top: 10vh;
+      left: 0;
+      z-index: -1;
+    }
+
+    main {
+      /* position: relative; */
+      height: 200vh;
+      background-color:black;
+      color: white;
+      line-height: 200vh;
+      font-size: 36px;
+      /* top: 100vh; */
+      margin-top: calc(var(--navHeight) + var(--headerHeight));
+      left: 0;
+      background: linear-gradient(45deg, 
+        rgb(12, 89, 179) 0%, 
+        rgb(230, 159, 7) 20%,
+        rgb(12, 89, 179) 40%, 
+        rgb(230, 159, 7) 60%,
+        rgb(12, 89, 179) 80%, 
+        rgb(230, 159, 7) 100%
+        ); 
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    Nawigacja - 10% wysokości okna
+  </nav>
+  <header>
+    Header - 90% wysokości okna
+  </header>
+  <main>
+    Główna zawartość - 200% wysokości okna
+  </main>
+</body>
+</html>

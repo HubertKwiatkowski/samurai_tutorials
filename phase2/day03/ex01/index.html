@@ -1,0 +1,120 @@
+<!-- 
+    Układ 16:9
+    Ma być podobny (nie pixel w pixel)
+    Ma być responsywny (dostosowoywać się do wysokości przeglądarki)
+
+    ZŁOTE ZASADY
+    - Zrób tak jak potrafisz i tyle ile potrafisz
+    - Próbuj/testuj/sprawdzaj co by było. Takie próbowanie to najważniejsze cechy programisty
+    - Nie przeskakuj ćwiczenia. 
+ -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A dream about old Japan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            --divHeight: 50vh;
+            --divWidth: calc((var(--divHeight)) * 16 / 9)
+        }
+
+        .picture {       
+            background-color: rgb(145, 192, 200);     
+            overflow: hidden;
+            position: relative;
+            height: var(--divHeight);
+            max-width: var(--divWidth);
+            margin: 10vh auto 0;
+        }
+
+        img {
+            position: absolute;
+            height: 100%;            
+        }
+
+        img:nth-of-type(1) {
+            bottom: calc(var(--divHeight) * -0.10);
+        }
+
+        img:nth-of-type(2) {
+            bottom: calc(var(--divHeight) * -0.23);
+        }
+
+        img:nth-of-type(3) {
+            bottom: calc(var(--divHeight) * -0.34);
+        }
+
+        img:nth-of-type(4) {
+            bottom: calc(var(--divHeight) * -0.28);
+        }
+
+        img:nth-of-type(5) {
+            bottom: calc(var(--divHeight) * -0.35);
+        }
+
+        img:nth-of-type(6) {
+            bottom: calc(var(--divHeight) * -0.60);
+        }
+
+        img:nth-of-type(7) {
+            height: calc(var(--divHeight) * 0.14);
+            top: calc(var(--divHeight) * 0.05);
+            left: calc(var(--divWidth) * 0.07);
+        }
+
+        img:nth-of-type(8) {
+            height: calc(var(--divHeight) * 0.07);
+            top: calc(var(--divHeight) * 0.09);
+            left: calc(var(--divWidth) * -0.10);
+        }
+
+        img:nth-of-type(9) {
+            height: calc(var(--divHeight) * 0.12);
+            top: calc(var(--divHeight) * 0.07);
+            right: 0;
+        }
+
+        img:nth-of-type(10) {
+            height: calc(var(--divHeight) * 0.45);
+            top: calc(var(--divHeight) * 0.15);
+            right: 0;
+        }
+
+        img:nth-of-type(11) {
+            height: calc(var(--divHeight) * 0.25);
+            bottom: calc(var(--divHeight) * 0.25);
+            left: calc(var(--divWidth) * 0.07);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="picture">
+        <!-- img[src=img/japan$.png]*11 -->
+        <img src="img/japan1.png" alt="">
+        <img src="img/japan2.png" alt="">
+        <img src="img/japan3.png" alt="">
+        <img src="img/japan4.png" alt="">
+        <img src="img/japan5.png" alt="">
+        <img src="img/japan6.png" alt="">
+        <img src="img/japan7.png" alt="">
+        <img src="img/japan8.png" alt="">
+        <img src="img/japan9.png" alt="">
+        <img src="img/japan10.png" alt="">
+        <img src="img/japan11.png" alt="">
+
+    </div>
+</body>
+
+</html>

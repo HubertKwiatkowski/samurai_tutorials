@@ -1,0 +1,33 @@
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 40vh;
+    background-image: url(ex6_images/jetty.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: #333;
+    padding-left: 20px;
+    border-bottom: 4px solid royalblue;
+    font-size: 0;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: white;
+}
+
+nav a:hover {
+    color: orange;
+}
