@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <script src="https://kit.fontawesome.com/a808255b47.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .wrap {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .wrap,
+    nav.desktop,
+    header {
+      height: 360px;
+    }
+
+    nav.desktop {
+      float: left;
+      width: 300px;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav.desktop a {
+      display: block;
+      line-height: 72px;
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+      font-family: arial;
+      padding: 0 5px 0 30px;
+    }
+
+    nav.desktop i {
+      width: 50px;
+      border-right: 2px solid black;
+      margin-right: 20px;
+      transition: 0.3s;
+    }
+
+    nav.desktop a:hover {
+      color: #999;
+      border-color: #999;
+    }
+
+    nav.desktop a:hover i {
+      margin-right: 70px;
+    }
+
+    header {
+      float: left;
+      width: calc(100% - 300px);
+      background-image: url('pianino.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    section {
+      margin-top: 50px;
+    }
+
+    section h1 {
+      font-size: 40px;
+      font-family: arial;
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav.mobile {
+      display: none;
+    }
+
+    @media (max-width: 1024px) {
+      nav.desktop {
+        display: none
+      }
+
+      nav.mobile {
+        position: fixed;
+        display: block;
+        width: 72px;
+        height: 100%;
+        background-color: black;
+        color: white;
+      }
+
+      nav.mobile a {
+        display: block;
+        line-height: 10vh;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      nav.mobile a:hover {
+        color: orange;
+      }
+
+      header {
+        width: 100%;
+      }
+
+      section h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap clearfix">
+    <nav class="desktop">
+      <ul>
+        <li><a href="#">
+          <i class="far fa-play-circle"></i>
+          start</a></li>
+        <li><a href="#">
+          <i class="fas fa-shopping-cart"></i>
+          oferta</a></li>
+        <li><a href="#">
+          <i class="fas fa-rss"></i>
+          blog</a></li>
+        <li><a href="#">
+          <i class="far fa-calendar-alt"></i>
+          terminarz</a></li>
+        <li><a href="#">
+          <i class="far fa-envelope"></i>
+          kontakt</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile">
+      <ul>
+        <li><a href="#">
+          <i class="far fa-play-circle"></i>
+          </a></li>
+        <li><a href="#">
+          <i class="fas fa-shopping-cart"></i>
+          </a></li>
+        <li><a href="#">
+          <i class="fas fa-rss"></i>
+          </a></li>
+        <li><a href="#">
+          <i class="far fa-calendar-alt"></i>
+          </a></li>
+        <li><a href="#">
+          <i class="far fa-envelope"></i>
+          </a></li>
+      </ul>
+    </nav>
+    <header>
+
+    </header>
+  </div>
+  <section>
+    <h1>Witaj w naszym świecie</h1>
+  </section>  
+</body>
+</html>
