@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      --size: 5vh;
+    }
+
+    div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: calc(var(--size) / 2) dashed black;
+      
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: white;
+    }
+
+    div.zero {
+      height: calc(1 * var(--size));
+      width: calc(1 * var(--size));
+      animation: 3s infinite linear rotate;
+      z-index: 1;
+      /* border: none; */
+    }   
+
+    div.first {
+      height: calc(2 * var(--size));
+      width: calc(2 * var(--size));
+      animation: 6s infinite linear rotate;
+    }
+
+    div.second {
+      height: calc(3 * var(--size));
+      width: calc(3 * var(--size));
+      animation: 11s infinite linear rotate reverse;
+      z-index: -1;
+    }
+
+    div.third {
+      height: calc(4 * var(--size));
+      width: calc(4 * var(--size));
+      animation: 7s infinite linear rotate;
+      z-index: -2;
+    }
+
+    div.fourth {
+      height: calc(5 * var(--size));
+      width: calc(5 * var(--size));
+      animation: 12s infinite linear rotate reverse;
+      z-index: -3;
+    }
+
+    div.fifth {
+      height: calc(6 * var(--size));
+      width: calc(6 * var(--size));
+      animation: 8s infinite linear rotate;
+      z-index: -4;
+    }
+
+    div.sixth {
+      height: calc(7 * var(--size));
+      width: calc(7 * var(--size));
+      animation: 13s infinite linear rotate reverse;
+      z-index: -5;
+    }
+
+    div.seventh {
+      height: calc(8 * var(--size));
+      width: calc(8 * var(--size));
+      animation: 9s infinite linear rotate;
+      z-index: -6;
+    }
+
+    div.eight {
+      height: calc(9 * var(--size));
+      width: calc(9 * var(--size));
+      animation: 14s infinite linear rotate reverse;
+      z-index: -7;
+    }
+
+    div.nineth {
+      height: calc(10 * var(--size));
+      width: calc(10 * var(--size));
+      animation: 10s infinite linear rotate;
+      z-index: -8;
+    }
+
+    div.tenth {
+      height: calc(11 * var(--size));
+      width: calc(11 * var(--size));
+      animation: 10s infinite linear rotate reverse;
+      z-index: -9;
+    }
+
+    /* div span {
+      position: absolute;
+      height: 50%;
+      width: 50%;
+    } */
+
+    div span:nth-of-type(1) {
+      top: 0;
+      left: 0;
+      background-color: black;
+    }
+
+    div span:nth-of-type(2) {
+      top: 0;
+      right: 0;
+    }
+
+    div span:nth-of-type(3) {
+      bottom: 0;
+      left: 0;
+    }
+
+    div span:nth-of-type(4) {
+      bottom: 0;
+      right: 0;
+      background-color: black;
+    }
+
+    @keyframes rotate {
+      50% {
+        transform: translate(-50%, -50%) rotate(180deg);
+      }
+
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="zero"></div>
+  <div class="first">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="second">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="third">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="fourth">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="fifth">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="sixth">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="seventh">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="eight">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>  
+  <div class="nineth">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="tenth">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+</body>
+</html>

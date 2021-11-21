@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button {
+      position: absolute;
+      bottom: 15vh;
+      right: 15vw;
+      border: 2px solid black;
+      padding: 20px 40px;
+      background-color: white;
+      font-size: 40px;
+      text-transform: uppercase;
+      font-family: arial;
+      animation: 4s shakes linear infinite;
+    }
+
+    @keyframes shakes {
+      0%{
+        transform: translateX(0)
+      }
+      90%{transform: translateX(0);}
+      91%{transform: translateX(-10px);}
+      92%{transform: translateX(10px);}
+      93%{transform: translateX(-10px);}
+      94%{transform: translateX(10px);}
+      95%{transform: translateX(-10px);}
+      96%{transform: translateX(010px);}
+      97%{transform: translateX(-10px);}
+      98%{transform: translateX(10px);}
+      99%{transform: translateX(-10px);}
+      100%{transform: translateX(0);}
+    }
+  </style>
+</head>
+<body>
+  <button>Kup teraz</button>
+</body>
+</html>

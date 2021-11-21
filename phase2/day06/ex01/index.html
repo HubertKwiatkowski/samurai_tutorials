@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Słońce</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #444;
+      animation: sky 10s linear infinite;
+    }
+
+    .sun {
+      position: fixed;
+      bottom: 15%;
+      left: 15%;
+      width: 15vh;
+      height: 15vh;
+      background-color: darkred;
+      border-radius: 50%;
+      animation: sun 10s linear infinite;
+    }
+
+    .grass {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 30vh;
+      background-color: #222;
+      animation: grass 10s linear infinite;
+    }
+
+    @keyframes sky {
+      0% {
+        background-color: rgb(54, 73, 98);
+      }
+
+      35% {
+        background-color: rgb(109, 153, 223);
+      }
+
+      50% {
+        background-color: rgb(170, 196, 238);
+      }
+
+      65% {
+        background-color: rgb(109, 153, 223);
+      }
+
+      85% {
+        background-color: rgb(250, 56, 56);
+      }
+
+      100% {
+        background-color: rgb(54, 73, 98);
+      }      
+      
+    }
+
+    @keyframes grass {
+      0% {
+        background-color: rgb(60, 71, 63);
+      }
+
+      20% {
+        background-color: green;
+      }
+
+      50% {
+        background-color: lightgreen;
+      }
+
+      80% {
+        background-color: green;
+      }
+
+      100% {
+        background-color: rgb(60, 71, 63);
+      }  
+    } 
+
+    @keyframes sun {
+      10% {
+        bottom: 15%;
+        left: 10%;
+        background-color: darkred;
+      }
+
+      25% {
+        bottom: 45%;
+        background-color: yellow;
+      }      
+
+      50% {
+        bottom: 60%;
+
+      }
+
+      75% {
+        bottom: 45%;
+        background-color: yellow;
+      } 
+
+      90% {
+        bottom: 15%;
+        left: 90%;
+        background-color: rgb(248, 58, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sun"></div>
+  <div class="grass"></div>
+</body>
+</html>
