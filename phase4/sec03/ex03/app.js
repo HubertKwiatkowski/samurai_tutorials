@@ -1,24 +1,61 @@
-const header = <h1 className="tittle"> Witaj na stronie!</h1>
+// komponent funcyjny, bezstanowy
 
-const classBig = "big";
+// const App = () => {
+//   return (
+//     <div>
+//       <h1>Pierwszy komponent</h1>
+//     </div>
+//   )
+// }
 
-const handleClick = () => alert("klik")
+// komponent klasowy, stanowy
 
-const main = (
-  <div>
-    <h1 onClick={handleClick} className="red">Pierwszy artykol</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vel recusandae sapiente deleniti illum pariatur possimus consectetur a, quidem, soluta minima, veritatis maxime delectus inventore fuga asperiores ipsam repellendus itaque.</p>
-  </div>
-)
+// class App2 extends React.Component {
+//   state = {
+//     number: 0,
+//   }
+//   render() {
+//     return (
+//       <section>
+//         <h2>Komponent klasowy {this.state.number}</h2>
+//       </section>
+//     )
+//   }
+// }
 
-const text = "Stopka";
+// ReactDOM.render(<App2 />, document.getElementById('root'))
 
-const footer = (
-  <footer>
-    <p className={classBig}>{text}</p>
-  </footer>
-)
 
-const app = [header, main, footer]
+// drugi przyklad
 
-ReactDOM.render(app, document.getElementById('root'))
+// komponent funcyjny, bezstanowy
+
+const Header = () => {
+  return (
+      <h1>Witaj na stronie</h1>
+  )
+}
+
+// komponent klasowy, stanowy
+
+class Blog extends React.Component {
+  render() {
+    return (
+      <section>
+        <h2>Artykul</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fugit, tenetur eligendi, eos officiis eaque, molestias eum nesciunt blanditiis exercitationem laboriosam natus inventore ipsam. Corrupti ad labore quae fugiat in?</p>
+      </section>
+    )
+  }
+}
+
+const App = () => {
+    return (
+      <div>
+        <Header />
+        <Blog />
+      </div>
+    )
+  }
+
+ReactDOM.render(<App />, document.getElementById('root'))
