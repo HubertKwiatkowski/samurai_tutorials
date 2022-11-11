@@ -1,6 +1,5 @@
 const ValidationMessage = (props) => <p>{props.txt}</p>
 
-
 const OrderForm = (props) => {
   return (
     <form onSubmit={props.submit}>
@@ -15,7 +14,6 @@ const OrderForm = (props) => {
       <button type="submit">Kup bilet</button>
     </form>
   )
-
 }
 
 class TickedShop extends React.Component {
